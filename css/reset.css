@@ -1,0 +1,77 @@
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 300;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: #000000;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: var(--main-btn-color);
+}
+
+body {
+  line-height: 1;
+}
+
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+input {
+  outline-offset: 1px;
+  outline: none;
+}
+
+:where(:not(:active):focus-visible) {
+  outline-offset: 1px;
+}
+
+@media (--motionOK) {
+  :where(:focus-visible) {
+    transition: outline-offset 145ms var(--ease-2);
+  }
+  :where(:not(:active):focus-visible) {
+    transition-duration: 0.25s;
+  }
+}
+
+button {
+  cursor: pointer;
+}
